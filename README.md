@@ -89,22 +89,6 @@ graph TD
 
 这是最关键的一步，请仔细按照以下步骤操作：
 
-#### 获取 token_v2
-
-1. 登录 [Notion](https://www.notion.so/)
-2. 打开浏览器开发者工具 (F12)
-3. 切换到 **Application** 标签页
-4. 展开 **Cookies** → **https://www.notion.so**
-5. 找到 `token_v2` 项，复制其 **Value**
-
-#### 获取 Space ID 和 User ID
-
-1. 在开发者工具中切换到 **Network** 标签页
-2. 在 Notion 中进行任意操作（如点击页面）
-3. 找到 `getRecordValues` 或类似请求
-4. 查看请求头中的：
-   - `x-notion-active-user-header` → **User ID**
-   - `x-notion-space-id` → **Space ID**
 
 ### 配置环境变量
 
